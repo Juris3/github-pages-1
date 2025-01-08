@@ -58,6 +58,29 @@
         .nav {
             display: flex;
             gap: 30px;
+            align-items: center;
+        }
+
+        .nav a {
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2B3467;
+            transition: width 0.3s;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
         }
 
         a {
@@ -132,6 +155,7 @@
             display: flex;
             gap: 8px;
             align-items: center;
+            margin-left: 30px;
         }
 
         .lang-switch span {
@@ -158,19 +182,6 @@
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <a href="par-mums.html">PAR MUMS</a>
-            <a href="kontakti.html">KONTAKTI</a>
-            <div class="lang-switch">
-                <a href="#" style="font-weight: bold;">LV</a>
-                <span>|</span>
-                <a href="#">EN</a>
-            </div>
-        </div>
-    </div>
-
     <!-- Main Header -->
     <header class="header">
         <div class="container">
@@ -185,6 +196,13 @@
                 <a href="sakums.html">SĀKUMS</a>
                 <a href="jaunumi.html">JAUNUMI</a>
                 <a href="talmaciba.html">TĀLMĀCĪBA</a>
+                <a href="par-mums.html">PAR MUMS</a>
+                <a href="kontakti.html">KONTAKTI</a>
+                <div class="lang-switch">
+                    <a href="#" style="font-weight: bold;">LV</a>
+                    <span>|</span>
+                    <a href="#">EN</a>
+                </div>
             </nav>
         </div>
     </header>
