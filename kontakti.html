@@ -4,138 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakti - LATVIJAS TĀLMĀCĪBAS CENTRS</title>
-    <style>
-	.header {
-    background: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-}
-
-.nav {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav a {
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 5px 0;
-    position: relative;
-}
-
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #2B3467;
-    transition: width 0.3s;
-}
-
-.nav a:hover::after {
-    width: 100%;
-}
-
-.lang-switch {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.lang-switch span {
-    color: #ccc;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-}
-        /* [Previous styles remain the same until .hero] */
-
-        .page-content {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            margin-top: 40px;
-        }
-
-        .contact-form {
-            display: grid;
-            gap: 20px;
-        }
-
-        .form-group {
-            display: grid;
-            gap: 8px;
-        }
-
-        label {
-            font-weight: 500;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        .contact-info {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        .contact-item {
-            margin-bottom: 20px;
-        }
-
-        .page-title {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #2B3467;
-        }
-
-        @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Main Header -->
@@ -148,18 +17,18 @@
             </svg>
             <span>LATVIJAS TĀLMĀCĪBAS CENTRS</span>
         </a>
-        <nav class="nav">
-            <a href="sakums.html">SĀKUMS</a>
-            <a href="jaunumi.html">JAUNUMI</a>
-            <a href="talmaciba.html">TĀLMĀCĪBA</a>
-            <a href="par-mums.html">PAR MUMS</a>
-            <a href="kontakti.html">KONTAKTI</a>
-            <div class="lang-switch">
-                <a href="#" style="font-weight: bold;">LV</a>
-                <span>|</span>
-                <a href="#">EN</a>
-            </div>
-        </nav>
+<nav class="nav">
+    <a href="index.html">SĀKUMS</a>
+    <a href="jaunumi.html">JAUNUMI</a>
+    <a href="talmaciba.html">TĀLMĀCĪBA</a>
+    <a href="par-mums.html">PAR MUMS</a>
+    <a href="kontakti.html" class="active">KONTAKTI</a>
+    <div class="lang-switch">
+        <a href="#" style="font-weight: bold;">LV</a>
+        <span>|</span>
+        <a href="#">EN</a>
+    </div>
+</nav>
     </div>
 </header>
 

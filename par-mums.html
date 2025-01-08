@@ -4,131 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Par Mums - LATVIJAS TĀLMĀCĪBAS CENTRS</title>
-    <style>
-	.header {
-    background: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-}
-
-.nav {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav a {
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 5px 0;
-    position: relative;
-}
-
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #2B3467;
-    transition: width 0.3s;
-}
-
-.nav a:hover::after {
-    width: 100%;
-}
-
-.lang-switch {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.lang-switch span {
-    color: #ccc;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-}
-        /* [Previous styles remain the same until .hero] */
-
-        .page-content {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            margin-top: 40px;
-        }
-
-        .about-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .page-title {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #2B3467;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .stat-card {
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .stat-number {
-            font-size: 36px;
-            font-weight: bold;
-            color: #2B3467;
-            margin-bottom: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Main Header -->
@@ -141,18 +17,18 @@
             </svg>
             <span>LATVIJAS TĀLMĀCĪBAS CENTRS</span>
         </a>
-        <nav class="nav">
-            <a href="sakums.html">SĀKUMS</a>
-            <a href="jaunumi.html">JAUNUMI</a>
-            <a href="talmaciba.html">TĀLMĀCĪBA</a>
-            <a href="par-mums.html">PAR MUMS</a>
-            <a href="kontakti.html">KONTAKTI</a>
-            <div class="lang-switch">
-                <a href="#" style="font-weight: bold;">LV</a>
-                <span>|</span>
-                <a href="#">EN</a>
-            </div>
-        </nav>
+<nav class="nav">
+    <a href="index.html">SĀKUMS</a>
+    <a href="jaunumi.html">JAUNUMI</a>
+    <a href="talmaciba.html">TĀLMĀCĪBA</a>
+    <a href="par-mums.html" class="active">PAR MUMS</a>
+    <a href="kontakti.html">KONTAKTI</a>
+    <div class="lang-switch">
+        <a href="#" style="font-weight: bold;">LV</a>
+        <span>|</span>
+        <a href="#">EN</a>
+    </div>
+</nav>
     </div>
 </header>
     <!-- [Header remains the same] -->
