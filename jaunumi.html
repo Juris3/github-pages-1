@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaunumi - LATVIJAS TĀLMĀCĪBAS CENTRS</title>
+    <style>
+        /* [Previous styles remain the same until .hero] */
+
+        .page-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .news-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2B3467;
+        }
+    </style>
+</head>
+<body>
+    <!-- [Header remains the same] -->
+
+    <div class="page-content">
+        <h1 class="page-title">Jaunumi</h1>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="/api/placeholder/400/200" alt="News 1" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">2025. gada 8. janvāris</div>
+                    <h2>Jauns mācību gads - jaunas iespējas</h2>
+                    <p>Sācies jauns mācību gads ar jaunām iespējām un programmām...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="/api/placeholder/400/200" alt="News 2" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">2024. gada 15. decembris</div>
+                    <h2>Ziemas uzņemšana sākusies</h2>
+                    <p>Aicinām pieteikties ziemas uzņemšanai mūsu programmās...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="/api/placeholder/400/200" alt="News 3" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">2024. gada 1. decembris</div>
+                    <h2>Jauna sadarbība ar universitātēm</h2>
+                    <p>Esam uzsākuši jaunu sadarbību ar vadošajām universitātēm...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

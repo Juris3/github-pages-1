@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Mums - LATVIJAS TĀLMĀCĪBAS CENTRS</title>
+    <style>
+        /* [Previous styles remain the same until .hero] */
+
+        .page-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2B3467;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .stat-card {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2B3467;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- [Header remains the same] -->
+
+    <div class="page-content">
+        <h1 class="page-title">Par Mums</h1>
+        
+        <div class="about-grid">
+            <div>
+                <h2>Mūsu Vēsture un Vīzija</h2>
+                <p>Latvijas Tālmācības Centrs ir vadošā tālmācības iestāde Latvijā, kas nodrošina kvalitatīvu izglītību jau vairāk nekā 10 gadus.</p>
+                <p>Mūsu mērķis ir padarīt izglītību pieejamu ikvienam, neatkarīgi no atrašanās vietas vai laika ierobežojumiem.</p>
+            </div>
+            <img src="/api/placeholder/600/400" alt="Par mums" class="about-image">
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">1000+</div>
+                <div>Absolventi</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div>Pedagogi</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div>Programmas</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
