@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Kontakti - LATVIJAS TĀLMĀCĪBAS CENTRS</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="../js-css/styles.css">
 	</head>
 	<body>
 		<!-- Main Header -->
 		<header class="header">
 			<div class="container">
-				<a href="index.html" class="logo">
+				<a href="../../index.html" class="logo">
 					<svg class="logo-img" viewBox="0 0 100 100">
 						<path d="M20,80 L50,20 L80,80 Z" fill="#2B3467"/>
 						<path d="M35,65 L50,35 L65,65 Z" fill="#EB455F"/>
@@ -18,7 +18,7 @@
 					<span>LATVIJAS TĀLMĀCĪBAS CENTRS</span>
 				</a>
 				<nav class="nav">
-					<a href="index.html">SĀKUMS</a>
+					<a href="../../index.html">SĀKUMS</a>
 					<a href="jaunumi.html">JAUNUMI</a>
 					<a href="talmaciba.html">TĀLMĀCĪBA</a>
 					<a href="par-mums.html">PAR MUMS</a>
@@ -26,58 +26,39 @@
 					<div class="lang-switch">
 						<a href="#" style="font-weight: bold;">LV</a>
 						<span>|</span>
-						<a href="#">EN</a>
+						<a href="../other/en/contacts.html">EN</a>
 					</div>
 				</nav>
 			</div>
 		</header>
-		
-		<!-- [Header remains the same] -->
-		
+		<!-- Page Content -->
 		<div class="page-content">
 			<h1 class="page-title">Kontakti</h1>
-			
-			<div class="contact-grid">
-				<div class="contact-form">
+			<div class="contact-info">
+				<p>Sazinieties ar mums, izmantojot zemāk norādīto informāciju vai aizpildiet kontaktformu.</p>
+				<ul>
+					<li>E-pasts: <a href="mailto:info@ltc.lv">info@ltc.lv</a></li>
+					<li>Tālrunis: +371 12345678</li>
+					<li>Adrese: Rīga, Brīvības iela 123</li>
+				</ul>
+			</div>
+			<div class="contact-form">
+				<h2>Sazināties ar mums</h2>
+				<form action="#" method="post">
 					<div class="form-group">
-						<label for="name">Vārds, Uzvārds</label>
+						<label for="name">Vārds:</label>
 						<input type="text" id="name" name="name" required>
 					</div>
-					
 					<div class="form-group">
-						<label for="email">E-pasts</label>
+						<label for="email">E-pasts:</label>
 						<input type="email" id="email" name="email" required>
 					</div>
-					
 					<div class="form-group">
-						<label for="message">Ziņojums</label>
-						<textarea id="message" name="message" required></textarea>
+						<label for="message">Ziņojums:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
 					</div>
-					
-					<button class="button">Sūtīt ziņojumu</button>
-				</div>
-				
-				<div class="contact-info">
-					<div class="contact-item">
-						<h3>Adrese</h3>
-						<p>Brīvības iela 100, Rīga, LV-1001</p>
-					</div>
-					
-					<div class="contact-item">
-						<h3>Tālrunis</h3>
-						<p>+371 67000000</p>
-					</div>
-					
-					<div class="contact-item">
-						<h3>E-pasts</h3>
-						<p>info@talmaciba.lv</p>
-					</div>
-					
-					<div class="contact-item">
-						<h3>Darba laiks</h3>
-						<p>Pirmdiena - Piektdiena: 9:00 - 17:00</p>
-					</div>
-				</div>
+					<button type="submit" class="button">Sūtīt ziņojumu</button>
+				</form>
 			</div>
 		</div>
 	</body>
